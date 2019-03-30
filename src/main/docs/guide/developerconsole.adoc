@@ -1,0 +1,29 @@
+Set up your Skill at https://developer.amazon.com/alexa/console/ask
+
+First login and go to Alexa -> Alexa Skills Kit and click on 'Create Skill'
+
+image::createskill.png[]
+
+
+Select 'Custom' for the type
+
+image::createnewskill.png[]
+
+For 'Choose a method to host your skill's backend resources' select 'Provision your own'. Then click 'Create Skill'.
+
+image::chooseamethod.png[]
+
+Select 'Start from scratch' under 'Choose a template' the click 'Choose'
+
+image::chooseatemplate.png[]
+
+On the next screen follow the 'Skill builder checklist' on the right:
+
+image::invocationname.png[]
+
+Click the invocation name box enter an invocation name and click 'save model'
+
+Next we will fill in the Intents and slots by pasting `interactionMode.json` in the JSON editor:
+
+image::json-edit.png[]
+

@@ -1,0 +1,23 @@
+gettingStarted: 
+  title: Getting Started
+  requirements: What you will need
+  solution: Solution
+writingTheSkill:
+  title: Writing the Skill
+  skill: Main function of skill
+  launchintent: Launch intent handler
+  questionservice: Retrieve questions from DynamoDB
+  answerservice: Handle user answers to questions
+  displayservice: Helper service to write to displays
+  metricsservice: Log metrics on how the skill is called and user stats
+setupTheDatabase:
+  title: Set up tables in DynamoDB
+awslambda:
+  title: Deploy to AWS Lambda
+  trigger: Link the Lambda triger to Alexa Skill
+developerconsole: Set up the skill in your developer.amazon.com skills console
+testingTheApp:
+  title: Testing the Skill
+runningTheApp: Running the app
+nextSteps:
+  title: Next Steps

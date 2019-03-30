@@ -1,0 +1,16 @@
+Go to the AWS Lambda Console:
+
+image::lambda-functions.png[]
+
+Click on the function
+
+image::lambda-starwars-configrequiredtop.png[]
+
+Click 'add trigger'
+
+image::lambda-starwars-configuretriggers.png[]
+
+Enter your skill ID from the Amazon Developer Portal skills page.
+
+Make a note of the ARN for the Lambda, you will need that on the Amazon Developer Portal to finish building your skill. Let's do that now!
+

@@ -1,0 +1,18 @@
+Edit `AlexaApplication`
+
+[source,groovy]
+.alexa-star-wars-quiz/src/main/groovy/com/amazon/ask/starWarsQuiz/handlers/AlexaApplication.groovy
+----
+include::{sourceDir}/alexa-star-wars-quiz/src/main/groovy/com/amazon/ask/starWarsQuiz/handlers/AlexaApplication.groovy[]
+----
+<1> Annotate the class with `@Singleton`. This class will be given to AWS Lambda as the handler in build.gradle.
+<2> We annotate handlers with `@IntentHandler`. The value passed in is the name name of the intent as defined in the Alexa Developer Console. You can use `AlexaIntents` for some pre-defined intent types.
+<3> Configure a logger for the function with `@Slf4j`. If you use AWS Lambda, you will be able to see this logs in CloudWatch Logs.
+<4> Inject via constructor `DisplayService`, `QuestionService`, and `AnswerService`.
+<5> We create helper method to determine display type.
+<6> Helper method to write a response with a String.
+<7> Fallback intent when Alexa can't understand what the user said.
+<8> Cancel/Stop intent - stops the skill.
+<9> Answer intent - processes the user's answer to question (1-4)
+<10> Repeat intent - when user asks to repeat the question
+

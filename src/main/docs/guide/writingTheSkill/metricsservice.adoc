@@ -1,0 +1,11 @@
+Edit `MetricsService`
+
+[source,groovy]
+.alexa-star-wars-quiz/src/main/groovy/com/amazon/ask/starWarsQuiz/services/MetricsService.groovy
+----
+include::{sourceDir}/alexa-star-wars-quiz/src/main/groovy/com/amazon/ask/starWarsQuiz/services/MetricsService.groovy[]
+----
+<1> Annotate the class with `@Singleton`. This class will be given to AWS Lambda as the handler in build.gradle.
+<2> We annotate the init() method with '@PostConstruct' to initialize the DynamoDB connection. You can also use `ServerStartedEvent` instead.
+<3> Keeps a log of which questions often get which answers for further analysis.
+<4> stores metrics on a per user basis (Amazon anonymizes the information)

@@ -1,0 +1,15 @@
+Edit `QuestionService`
+
+[source,groovy]
+.alexa-star-wars-quiz/src/main/groovy/com/amazon/ask/starWarsQuiz/services/QuestionService.groovy
+----
+include::{sourceDir}/alexa-star-wars-quiz/src/main/groovy/com/amazon/ask/starWarsQuiz/services/QuestionService.groovy[]
+----
+<1> Annotate the class with `@Singleton`. This class will be given to AWS Lambda as the handler in build.gradle.
+<2> helper we can just pass strings for the card text and speech text to generate a ask response (question)
+<3> helper we can just pass strings for the card text and speech text to generate a response (no question)
+<4> Builds a `BodyTemplate1` layout (there is also BodyTemplate1-7 for different styles) more info at https://developer.amazon.com/docs/custom-skills/display-interface-reference.html
+<5> Builds an image instance from a given url. These types are needed for the BodyTemplate classes
+<6> Builds a text context used for BodyTemplates
+<7> Builds a text context used for BodyTemplates
+

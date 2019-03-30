@@ -1,0 +1,12 @@
+Edit `LaunchRequestHandler`
+
+[source,groovy]
+.alexa-star-wars-quiz/src/main/groovy/com/amazon/ask/starWarsQuiz/handlers/LaunchRequestHandler.groovy
+----
+include::{sourceDir}/alexa-star-wars-quiz/src/main/groovy/com/amazon/ask/starWarsQuiz/handlers/LaunchRequestHandler.groovy[]
+----
+<1> Annotate the class with `@Singleton`. This class will be given to AWS Lambda as the handler in build.gradle.
+<2> We implement the interface `RequestHandler`.
+<3> Default configuration value set to 5 questions or set 'quiz.default-number-of-questions: 5' in application.yml.
+<4> Shows what ASK class this is tied to. You can also use `IntentRequest` (Generic), or `SessionEndedRequest`. See http://ask-sdk-java-javadocs.s3-website-us-west-2.amazonaws.com/ for more information.
+<5> Main method called to handle the incoming request - in this case specifically a `LaunchRequest`.

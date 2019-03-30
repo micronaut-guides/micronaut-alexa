@@ -1,0 +1,10 @@
+Edit `AnswerService`
+
+[source,groovy]
+.alexa-star-wars-quiz/src/main/groovy/com/amazon/ask/starWarsQuiz/services/AnswerService.groovy
+----
+include::{sourceDir}/alexa-star-wars-quiz/src/main/groovy/com/amazon/ask/starWarsQuiz/services/AnswerService.groovy[]
+----
+<1> Annotate the class with `@Singleton`. This class will be given to AWS Lambda as the handler in build.gradle.
+<2> We have to use injection like this because constructor injector doesn't work in this case
+<3> We process the answers the user gives and tell the user if they were correct or not.

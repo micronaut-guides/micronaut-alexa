@@ -1,0 +1,23 @@
+We need to create 3 tables in DynamoDB for the skill to use:
+
+* StarWarsQuiz
+* StarWarsQuizUserMetrics
+* StarWarzQuizMetrics
+
+
+image::dynamo-tables.png[]
+
+
+Let's create the tables. Click 'Create Table' button and fill in the name. For primary key id enter 'id' of type number. Leave defaults alone and click 'Save'.
+
+image::starwarsquiz-table.png[]
+
+Next we will create the two other metrics tables, so we can learn about how people use the skill, if the questions are too hard, etc. Note this table also has a key called 'id' but is of type String.
+
+image::starwarsquizusermetrics.png[]
+
+Now the last table, key 'id' type 'Number'
+
+image::starwarzquizmetrics.png[]
+
+Now we are very close to deploying and testing our skill!

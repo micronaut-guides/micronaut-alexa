@@ -1,0 +1,26 @@
+---
+
+You must have your skill pass certification to be available to the public. An actual person will review the skill for bugs or non compliance issues, and you will get an email if what failed about your skill in 2-7 days.
+
+Here are some more tips:
+
+* Supply an icon of 108x108px and large icon 512x512
+* Valid Recognized Cert (For non Lambda)
+* Must have a VALID privacy policy and terms of use
+* Must supply proper HELP anytime during session
+* Must supply ability to stop skill by saying "STOP" or "CANCEL"
+* Must be clear it doesn't violate any trademark or IP
+* A real person will fire up the app and use it to test
+* Process takes about 2-7 days for feedback
+
+Some gotchas to watch out for:
+
+* Use number type for numbers- it will translated spoken word to numbers not words
+* Use many similar sounding or misspelled sample utterances for better understanding
+* Sometimes you must have Amazon Literal Type to parse better
+* Some invocation don't work - Hello, Amazon, Echo. Grails is often mis-interpreted
+* SSL Self-signed certs - common name must match hostname of app
+* SSML Audio - follow tips given, it's very picky and needs valid CA cert
+* Audio player skills - audio content must be streamed in SSL as well
+* Slot values don't have to be complete just enough to guide it
+

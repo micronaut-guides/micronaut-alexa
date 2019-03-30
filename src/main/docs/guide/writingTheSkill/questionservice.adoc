@@ -1,0 +1,15 @@
+Edit `QuestionService`
+
+[source,groovy]
+.alexa-star-wars-quiz/src/main/groovy/com/amazon/ask/starWarsQuiz/services/QuestionService.groovy
+----
+include::{sourceDir}/alexa-star-wars-quiz/src/main/groovy/com/amazon/ask/starWarsQuiz/services/QuestionService.groovy[]
+----
+<1> Annotate the class with `@Singleton`. This class will be given to AWS Lambda as the handler in build.gradle.
+<2> Default configuration value set to 5 questions or set 'quiz.default-number-of-questions: 5' in application.yml.
+<3> We annotate the init() method with '@PostConstruct' to initialize the DynamoDB connection. You can also use `ServerStartedEvent` instead.
+<4> Retrieve a question out of the DynamoDB table
+<5> Gets a random question
+<6> Lowers the session counter of question asked
+<7> Gets a random question assuring it was not asked before in this session
+<8> Repeats a question when asked

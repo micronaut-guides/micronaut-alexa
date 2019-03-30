@@ -1,0 +1,15 @@
+In this tutorial we are going to build and deploy an Amazon Alexa skill using Micronaut to AWS.
+
+* `alexa-star-wars-quiz` - A Function which you will build with Micronaut and deploy to https://aws.amazon.com/lambda/[AWS Lambda].
+
+
+The next diagram illustrates the flow of an Alexa skill:
+
+image::alexa-appkit-architecture.svg[]
+
+We will be building a full featured Amazon Alexa Skill in Groovy using Micronaut that uses DynamoDB data storage. This uses the newer V2 ASK SDK.
+
+If you want to try in Java or Kotlin, try to modify the code as we go and give it a shot!
+
+
+

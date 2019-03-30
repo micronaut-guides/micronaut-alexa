@@ -1,0 +1,10 @@
+Read more about https://docs.micronaut.io/latest/guide/index.html#serverlessFunctions[Serverless Functions] inside Micronaut.
+
+
+Also check out these links:
+
+* Micronaut Star Wars Quiz: https://github.com/rvanderwerf/micronaut-heroQuiz
+* Micronaut Hello World examples: https://github.com/micronaut-projects/micronaut-aws
+* Run Skills in Browser: http://echosim.io
+* Amazon Developer Portal to register Skills: https://developer.amazon.com
+* API v2 Migration Guide: https://alexa-skills-kit-sdk-for-java.readthedocs.io/en/latest/Migrating-To-ASK-SDK-v2-For-Java.html
