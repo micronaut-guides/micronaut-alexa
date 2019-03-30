@@ -1,6 +1,6 @@
 Now, it is time to consume the AWS Lambda function from another micronaut Microservice:
 
-Create the microservice (or follow along with the code in the `complete` directory:
+Create the microservice (or follow along with the code in the `complete` directory):
 
 [source,bash]
 ----
