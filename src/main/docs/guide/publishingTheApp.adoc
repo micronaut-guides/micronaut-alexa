@@ -1,4 +1,4 @@
-The easiest way to configure credentials for invoking the function is to define a ~/.aws/credentials` file`.
+The easiest way to configure credentials for invoking the function is to define a `~/.aws/credentials` file.
 
 [source,bash]
 ----

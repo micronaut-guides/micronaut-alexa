@@ -2,7 +2,7 @@ Deploy your Micronaut function to https://aws.amazon.com/lambda/[AWS Lambda].
 
 First, make sure you have your AWS Credentials configured, and you have an IAM Role for running the AWS Lambda with access to DynamoDB.
 
-The easiest way to configure credentials for invoking the function is to define a ~/.aws/credentials` file`.
+The easiest way to configure credentials for invoking the function is to define a `~/.aws/credentials` file.
 
 image::security-credentials.png[]
 
