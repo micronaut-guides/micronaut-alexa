@@ -18,6 +18,6 @@ awslambda:
 developerconsole: Set up the skill in your developer.amazon.com skills console
 testingTheApp:
   title: Testing the Skill
-runningTheApp: Running the app
+publishingTheApp: Publishing the app
 nextSteps:
   title: Next Steps
